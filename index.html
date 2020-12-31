@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- CSS only -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCIATBgIzRIr3FNnMfnl-uAgjD3iTkrWAk",
+      authDomain: "fir-functions-6be9d.firebaseapp.com",
+      databaseURL: "https://fir-functions-6be9d.firebaseio.com",
+      projectId: "fir-functions-6be9d",
+      storageBucket: "fir-functions-6be9d.appspot.com",
+      messagingSenderId: "329298272635",
+      appId: "1:329298272635:web:7f58e4f6ec1cdf38825dde"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+</head>
+<center>
+<body>
+  <div class="container-fluid">
+  <!-- Content here -->
+  <!-- <input type="text" id="todo-item"> <br> -->
+  <!-- <button onclick="addTodo()">Add Item</button> <br>
+  <button onclick="deleteAll()">Delete All</button> <br> -->
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label"><h1>Email address</h1></label>
+    <input type="email" class="form-control" id="todo-item" placeholder="Write your todo">
+    
+    <!-- <ul id="list" class="list-group-item"></ul> -->
+    <div class="col-12"> 
+      <button type="submit" class="btn btn-outline-dark" onclick="addTodo()">ADD</button>
+      <button type="submit" class="btn btn-outline-danger" onclick="deleteAll()">Delete All</button>
+    </div>
+    <table class="table table-hover">
+     
+        
+          <span class="badge bg-warning text-dark todo">ToDOs</span>
+          <span class="badge bg-danger del">Delete</span>
+          <span class="badge bg-success editt">Edit</span>
+
+          <ul id="list" class="row align-items-center"></ul>
+        
+
+    </table>
+      </div>
+    </div>
+  </body>
+</center>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
+<script src="app.js"></script>
+</html>

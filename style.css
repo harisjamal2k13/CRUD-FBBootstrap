@@ -1,0 +1,58 @@
+body{
+    margin: 0 auto;
+    float: left;
+    align-content: center;
+    width: 100%;
+}
+
+#list{
+    align-items: center;
+    width: 95%;
+    margin-top: 2%;
+    margin-left: 1%;
+}
+.table{
+    font-size: 250px;
+}
+
+ul{
+    font-size: 40px;
+    font-weight: 300;
+    font-weight: bolder;
+    float: left;
+    width: 90%;
+}
+
+#todo-item{
+    margin-bottom: 2%;
+}
+.btn{
+    margin: 1%;
+}
+span.todo{
+        width: 50%;
+        height: 40px;
+        font-size: 1.7em; 
+}
+span.del{
+    width: 20%;
+    height: 40px;
+    font-size: 1.7em; 
+}
+span.editt{
+    width: 20%;
+    height: 40px;
+    font-size: 1.7em; 
+}
+.remov{
+        width: 20%;
+        margin-left: 40%;
+}
+.edit{
+    width: 20%;
+}
+ol{
+    background-color: yellowgreen;
+    width: 80px;
+    /* margin-left: 10%; */
+}
